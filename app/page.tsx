@@ -63,7 +63,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       {!isQuizEnd && (
-        <Stack gap="sm" mt="sm" align='center' w="30%">
+        <Stack gap="sm" mt="sm" align='center' w={{ base: "90%", xl: "30%", lg: "50%", md: "65%", sm: "80%", xs: "90%" }}>
           <Title order={2}>Its Quiz Time</Title>
           <Group justify='center' align='center' gap="xs">
             <Title order={5}>Q{currentQuestionIdx+1}/{questions.length}:</Title>
