@@ -1,0 +1,31 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.option {
+  border: 1px solid lighten(grey, 35%);
+  border-radius: var(--mantine-radius-sm);
+  padding: rem(15px);
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+
+  &:hover {
+    background-color: lighten(grey, 20%);
+  }
+}
+
+.selected {
+  @extend .option;
+  color: white;
+  background-color: var(--mantine-color-blue-7);
+  border: none;
+
+  &:hover {
+    @extend .selected;
+  }
+}
